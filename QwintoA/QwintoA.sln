@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QwintoA", "QwintoA\QwintoA.vcxproj", "{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Debug|x64.ActiveCfg = Debug|x64
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Debug|x64.Build.0 = Debug|x64
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Debug|x86.Build.0 = Debug|Win32
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Release|x64.ActiveCfg = Release|x64
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Release|x64.Build.0 = Release|x64
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Release|x86.ActiveCfg = Release|Win32
+		{DEAC38AD-8DAD-47B3-A520-F1E69E58ACDF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC292737-8B5C-47C2-89EA-62EFE60F4433}
+	EndGlobalSection
+EndGlobal
