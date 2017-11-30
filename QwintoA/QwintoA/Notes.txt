@@ -1,0 +1,39 @@
+[Qwinto Rules]
+
+-> Players choose alternatively to roll 1, 2 or 3 dices
+-> Dices are color-coded RED, YELLOW and BLUE
+-> Score sheet is essentially a 4 rows x 1-12 columns 2d-array. Rows are color-coded RYB+F (Failed throws).
+-> If a color of dice was used, the player can enter the total points in the row.
+-> Constraint: Numbers in each row must always increase, in each column no number may repeat.
+-> If the player can't add his points to the dice, it counts as a failed throw.
+-> Each failed throw gives a -5 points penalty on the final score of the player.
+-> After 4 failed throws the game ends.
+-> After a player has filled any 2 rows entirely, the game ends.
+-> The score is a mix between the number of scores in each row and a bonus for filling an overlapping column.
+-> In a completely filled row, the score is the score of the right-most entry.
+-> In the score sheet, bonus fields are marked %__% and invalid fields are marked |XX|. (Regular = |__|)
+-> In the score sheet, scores are between 1 and 18, and is always represented with 2 characters.
+
+	[Empty score sheet]
+
+	Player name:
+    	        -------------------------------
+	Red         |  %  %  |XX|  %  %  |  |  |  |
+	         ----------------------------------
+	Yellow   |  |  |  |  |  |XX|  %  %  |  |
+	      ----------------------------------
+	Blue  |  |  %  %  |XX|  |  |  |  %  %
+	      -------------------------------
+Failed throws:
+
+[Endgame score sheet]
+
+Player name: Jane Doe Points: 28
+ -------------------------------
+Red | 2% 3% 6|XX| 9%11%12|13|15|16|
+ ----------------------------------
+Yellow | 1| 3| 4| 5| |XX|12%13% | |
+ ----------------------------------
+Blue | 1| 3% % 6|XX| 7| | |10% %
+ -------------------------------
+Failed throws: 1 2 3
