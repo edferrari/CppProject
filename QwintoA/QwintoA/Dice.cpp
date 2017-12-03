@@ -1,5 +1,6 @@
 
 
 struct Dice {
-	const Colour c;
+	enum class Colour {RED, YELLOW, BLUE, GREEN, WHITE};
+	Colour c;
 };
