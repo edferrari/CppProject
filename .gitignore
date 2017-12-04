@@ -11,3 +11,16 @@ QwintoA/.vs/QwintoA/v15/Browse.VC.db
 QwintoA/.vs/QwintoA/v15/.suo
 QwintoA/QwintoA/QwintoA.vcxproj
 QwintoA/QwintoA/QwintoA.vcxproj.filters
+*.obj
+*.tlog
+*.idb
+*.pdb
+*.log
+*.ilk
+*.exe
+*.ipch
+*.db
+QwintoA/.vs/QwintoA/v15/.suo
+QwintoA/.vs/QwintoA/v15/ipch/AutoPCH/36715c0c5e5a413f/DICE.ipch
+*.ipch
+*.db

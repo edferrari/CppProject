@@ -19,3 +19,23 @@ loop over all players
 	print scoresheet
 print overall winner
 */
+#include <string>
+#include <iostream>
+#include "RandomDice.h"
+
+//Debug dependencies
+#include <chrono>
+#include <thread>
+inline void debug_test_rng();
+
+int main() {
+	debug_test_rng();
+}
+
+//Debug function for testing the RandomDice random number generator. Outputs random dice results to cout.
+inline void debug_test_rng() {
+	while (true) {
+		std::cout << RandomDice::generate();
+		std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+	}
+}
