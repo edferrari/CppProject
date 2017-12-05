@@ -1,11 +1,12 @@
 #pragma once
 #include "Dice.h"
-template <Dice::Colour::c>
+template <Dice::Colour C>
 class QwintoRow {
 public:
 	QwintoRow();
-	Dice::Colour color = c;
+	Dice::Colour color;
 	int[] data;
 	int& operator[](std::size_t idx);
-	int& operator[] const(std::size_t idx);
+	bool validate(int index, RollOfDice rd);
+	friend std::ostream& operator<<(std::ostream& os, const RollOfDice& roll);
 };
