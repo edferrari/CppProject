@@ -1,16 +1,27 @@
-#include
+#include "Dice.h"
+#include "RandomDice.h"
+#include <string>
 
-struct Dice {
-	const Colour c;
-};
+Dice::Dice(Colour color) : c(color) {
+	roll();
+}
 
-int roll() {
-	std::default_random_engine e;
-	for (rolls i = 1; i <= 6; i++){
-		e.min();
-		e.max();
-	}
-
-	int face = rand(6);
+int Dice::roll() {
+	face = RandomDice::generate();
 	return face;
 }
+
+std::ostream& operator<<(std::ostream& os, const Dice& dice) {
+	std::string colorString;
+
+	switch (dice.c) {
+		case Dice::Colour::RED: colorString = "red"; break;
+		case Dice::Colour::YELLOW: colorString = "yellow"; break;
+		case Dice::Colour::BLUE: colorString = "blue"; break;
+		case Dice::Colour::GREEN: colorString = "green"; break;
+		case Dice::Colour::WHITE: colorString = "white"; break;
+	}
+
+	os << "The face of the " + colorString + " dice is now " << dice.face << " !" << std::endl;
+	return os;
+};
