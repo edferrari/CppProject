@@ -1,3 +1,4 @@
+#include"QwixxScoreSheet.h"
 
 ostream &operator<<(ostream &os, QwixxScoreSheet &item) {
 	os <<
