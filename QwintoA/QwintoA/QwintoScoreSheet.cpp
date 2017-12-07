@@ -1,3 +1,8 @@
+#include "QwintoScoreSheet.h"
+
+QwintoScoreSheet::QwintoScoreSheet(std::string name) : ScoreSheet(name) {
+
+}
 
 ostream &operator<<(ostream &os, QwintoScoreSheet &item) {
 	os <<
