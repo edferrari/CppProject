@@ -23,6 +23,12 @@ int& QwintoRow<C>::operator[](std::size_t idx) {
 }
 
 template<Dice::Colour C>
+inline int & QwintoRow<C>::operator[](std::size_t idx) const
+{
+	return data[idx];
+}
+
+template<Dice::Colour C>
 bool QwintoRow<C>::validate(std::size_t index, RollOfDice rd) {
 	return (rd > data[index-1]);
 }

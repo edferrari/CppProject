@@ -13,6 +13,34 @@ QwintoScoreSheet::QwintoScoreSheet(std::string player) {
 	blue = QwintoRow<Dice::Colour::BLUE>();
 }
 
+bool QwintoScoreSheet::operator!() const {
+	return ((failed == 4) || (((red[10] != 0) && (yellow[10] != 0)) || ((red[11]) && (yellow[10])) || ((yellow[10]) & (blue[9]))));
+}
+
+bool QwintoScoreSheet::score(RollOfDice roll, Dice::Colour color, int position = -1) {
+	if (!validate(roll, color, position)) {
+		return false;
+	}
+	else {
+		if (color == Dice::Colour::RED) {
+			red[position] = roll;
+		}
+		else if (color == Dice::Colour::YELLOW) {
+			yellow[position] = roll;
+		}
+		else {
+			blue[position] = roll;
+		}
+
+		return true;
+	}
+}
+
+int QwintoScoreSheet::setTotal() {
+	calcTotal();
+	return (totalScore);
+}
+
 bool QwintoScoreSheet::validate(RollOfDice roll, Dice::Colour color, int position) {
 	bool res = false;
 	
