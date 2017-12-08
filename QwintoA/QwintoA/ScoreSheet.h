@@ -7,7 +7,7 @@ class ScoreSheet {
 public:
 	std::string playerName;
 	int failed;
-	int score;
+	int totalScore;
 
 	bool virtual score(RollOfDice roll, Dice::Colour color, int position = -1) = 0;
 	int virtual setTotal() = 0;

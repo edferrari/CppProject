@@ -4,7 +4,17 @@
 template <Dice::Colour C>
 QwintoRow<C>::QwintoRow() {
 	color = C;
-	data = {0,0,0,0,0,0,0,0,0,0,0,0};
+
+	//We mark the invalid fields with the special value -1
+	if (C == Dice::Colour::RED) {
+		data = { 0,0,0,0,0,-1,0,0,0,0,0,0 };
+	}
+	else if (C == Dice::Colour::YELLOW) {
+		data = { 0,0,0,0,0,0,-1,0,0,0,0,0 };
+	}
+	else {
+		data = { 0,0,0,0,-1,0,0,0,0,0,0,0 };
+	}
 }
 
 template <Dice::Colour C>
